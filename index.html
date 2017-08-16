@@ -1,0 +1,387 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+Главная
+ - kypimsami.ru</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/__base.css" rel="stylesheet">
+    
+<link href="assets/css/index.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <p class="navbar-text">
+          Регион:
+          </p>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" id="location-popover" href="#">
+              Новосибирск и область
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+  <li class="dropdown-submenu">
+  </li>
+  <li><a href="#">Москва и область</a></li>
+  <li><a href="#">Питер и область</a></li>
+  <li><a href="#">Новосибирск и область</a></li>
+  <li><a href="#">...</a></li>
+</ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Леонид Федорович</a></li>
+          <li><a href="#">выход</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="location-popover-template-wrapper", style="display: none">
+      <div class="popover fade bottom in location-popover-template" role="tooltip">
+        <div class="arrow"></div>
+        <h3 class="popover-title" style="display: none;"></h3>
+        <div class="popover-content">
+          <div class="row" id="location-prompt">
+            <p class="text-center">Ваш регион - Новосибирск и область.<br>Угадали?</p>
+            <button class="btn btn-default col-md-offset-2 col-md-3">Да</button>
+            <button class="btn btn-default col-md-offset-2 col-md-3">Нет</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="location-prompt-wrapper" style="display: none">
+      <div class="row" id="location-prompt">
+        <p class="text-center">Ваш регион - Новосибирск и область.<br>Угадали?</p>
+        <button class="btn btn-default col-md-offset-3 col-md-2">Да</button>
+        <button class="btn btn-default col-md-offset-2 col-md-2 location-dropdown-trigger">Нет</button>
+      </div>
+    </div>
+    
+<section class="participants">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-md-3">
+        <p class="participants-label">Участники в Новосибирске:</p>
+      </div>
+      <div class="col-sm-3 col-md-4">
+        <a href="#" class="participants-counter">105 оптовых компаний</a>
+      </div>
+      <div class="col-sm-3 col-md-4">
+        <a href="#" class="participants-counter">25 производителей</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="order-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2 text-center text-uppercase">
+  <p style="font-size: 42px;">Вам позвонят лучшие поставщики новосибирска</p>
+</div>
+<div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2" style="background-color: #d9d9d9">
+  <form class="form-horizontal" style="margin: 20px">
+    <div class="form-group">
+      <label class="col-sm-2 col-md-2 control-label" style="font-size: 24px">Я ищу</label>
+      <div class="col-sm-10 col-md-10 col-sm-offset-2 col-md-offset-2 checkbox">
+        <label><input type="checkbox" value="">ЖБИ</label>
+      </div>
+      <div class="col-sm-10 col-md-10 col-sm-offset-2 col-md-offset-2 checkbox">
+        <label><input type="checkbox" value="">Кирпич / Газобетон / Брус</label>
+      </div>
+      <div class="col-sm-10 col-md-10 col-sm-offset-2 col-md-offset-2 checkbox">
+        <label><input type="checkbox" value="">Бетон / Раствор</label>
+      </div>
+      <div class="col-sm-10 col-md-10 col-sm-offset-2 col-md-offset-2 dropdown" style="padding-top: 10px">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          в Новосибирскe и области
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+  <li class="dropdown-submenu">
+  </li>
+  <li><a href="#">Москва и область</a></li>
+  <li><a href="#">Питер и область</a></li>
+  <li><a href="#">Новосибирск и область</a></li>
+  <li><a href="#">...</a></li>
+</ul>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 col-md-2 control-label" for="order-description">Описание *</label>
+      <div class="col-sm-10 col-md-10">
+        <input class="form-control" id="order-description" type="text">
+      </div>
+      <div class="col-sm-10 col-md-10 col-sm-offset-2 col-md-offset-2">
+        <p class="text-muted" style="font-size: 11px">Пример: нужно фбс 2.4 4.6 50 шт плиты пк 2.0 ПК 60-20-12 доставка в Новолуговое</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 col-md-2 control-label" for="client-phone">Телефон *</label>
+      <div class="col-sm-4 col-md-4">
+        <input class="form-control" id="client-phone" type="text">
+      </div>
+      <label class="col-sm-2 col-md-2 control-label" for="client-name">Имя</label>
+      <div class="col-sm-4 col-md-4">
+        <input class="form-control" id="client-name" type="text">
+      </div>
+      <div class="col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3" style="padding-top: 30px">
+        <input class="btn btn-primary btn-lg form-control text-uppercase" type="submit" value="Опубликовать заявку" style="height: 50px; border-radius: 25px;">
+      </div>
+    </div>
+  </form>
+</div>
+    </div>
+  </div>
+</section>
+<section class="new-orders">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2 text-center">
+        <h1 class="new-orders-caption">Свежие заявки</h1>
+      </div>
+    </div>
+    <div class="row">
+  <div class="col-sm-3 col-md-3 col-sm-offset-2 col-md-offset-2">
+    <span>раздел:</span>
+    <div class="dropdown" style="display: inline-block">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Все
+        <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Не все</a></li>
+        <li><a href="#">Совсем чуть-чуть</a></li>
+        <li><a href="#">Еще немного</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-sm-5 col-md-5 text-right">
+    <span>регион:</span>
+    <div class="dropdown" style="display: inline-block">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Новосибирск и область
+        <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+  <li class="dropdown-submenu">
+  </li>
+  <li><a href="#">Москва и область</a></li>
+  <li><a href="#">Питер и область</a></li>
+  <li><a href="#">Новосибирск и область</a></li>
+  <li><a href="#">...</a></li>
+</ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2 text-center">
+    <hr>
+  </div>
+</div>
+    <div class="row">
+  <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+    <p class="text-muted" style="padding-bottom: 10px">вчера, в 21:30</p>
+    <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
+    <p>Алексей</p>
+      <button class="btn btn-primary" style="border-radius: 10px;">Показать телефон</button>
+      <span>12 просмотров</span>
+    <hr>
+  </div>
+</div>
+    <div class="row">
+  <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+    <p class="text-muted" style="padding-bottom: 10px">вчера, в 21:30</p>
+    <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
+    <p>Алексей</p>
+      <button class="btn btn-primary" style="border-radius: 10px;">Показать телефон</button>
+      <span>12 просмотров</span>
+    <hr>
+  </div>
+</div>
+    <div class="row">
+  <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+    <p class="text-muted" style="padding-bottom: 10px">вчера, в 21:30</p>
+    <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
+    <p>Алексей</p>
+      <button class="btn btn-primary" style="border-radius: 10px;">Показать телефон</button>
+      <span>12 просмотров</span>
+    <hr>
+  </div>
+</div>
+    <div class="row">
+  <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+    <p class="text-muted" style="padding-bottom: 10px">вчера, в 21:30</p>
+    <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
+    <p>Алексей</p>
+      <button class="btn btn-primary" style="border-radius: 10px;">Показать телефон</button>
+      <span>12 просмотров</span>
+    <hr>
+  </div>
+</div>
+    <div class="row text-center">
+      <a class="btn btn-primary btn-lg all-orders-button" href="orders.html">Посмотреть все заявки</a>
+    </div>
+  </div>
+</section>
+<section class="reviews">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div id="review-carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="row">
+  <div class="col-md-8 col-md-offset-2" style="height: 150px; padding: 20px; border: 3px solid grey">
+    <div class="row">
+      <div class="col-md-2">
+        <img src="assets/img/no-profile-picture.jpg" height=75px width=75px>
+      </div>
+      <div class="col-md-9">
+        <p><strong>Кирилл, 29 лет, г. Бабинск</strong></p>
+        <p>Бла-бла-бла, мне помогло, все супер! Бла-бла-бла, мне помогло, все супер! Бла-бла-бла, мне помогло, все супер! Бла-бла-бла, мне помогло, все супер! Бла-бла-бла, мне помогло, все супер!</p>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+            <div class="item">
+              <div class="row">
+  <div class="col-md-8 col-md-offset-2" style="height: 150px; padding: 20px; border: 3px solid grey">
+    <div class="row">
+      <div class="col-md-2">
+        <img src="assets/img/no-profile-picture.jpg" height=75px width=75px>
+      </div>
+      <div class="col-md-9">
+        <p><strong>Кирилл, 29 лет, г. Бабинск</strong></p>
+        <p>Бла-бла-бла, мне помогло, все супер! Бла-бла-бла, мне помогло, все супер! Бла-бла-бла, мне помогло, все супер! Бла-бла-бла, мне помогло, все супер! Бла-бла-бла, мне помогло, все супер!</p>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+            <div class="item">
+              <div class="row">
+  <div class="col-md-8 col-md-offset-2" style="height: 150px; padding: 20px; border: 3px solid grey">
+    <div class="row">
+      <div class="col-md-2">
+        <img src="assets/img/no-profile-picture.jpg" height=75px width=75px>
+      </div>
+      <div class="col-md-9">
+        <p><strong>Кирилл, 29 лет, г. Бабинск</strong></p>
+        <p>Бла-бла-бла, мне помогло, все супер! Бла-бла-бла, мне помогло, все супер! Бла-бла-бла, мне помогло, все супер! Бла-бла-бла, мне помогло, все супер! Бла-бла-бла, мне помогло, все супер!</p>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#review-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#review-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-info leave-review-button">Отправить отзыв</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+    <footer class="suppliers">
+      <div class="container-fluid">
+  <div class="row text-center">
+    <h1>Вы поставщик?</h1>
+  </div>
+  <div class="row" style="margin-top: 20px">
+    <div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
+      <p>
+      Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888-77-66
+      </p>
+      <p>
+      Текст с дополнительной информацией по условиям сотрудничества.
+      <br>
+      Возможно стоит вынести на отдельную страницу.
+      <br>
+      Текст с дополнительной информацией по условиям сотрудничества.
+      <br>
+      Возможно стоит вынести на отдельную страницу.
+      </p>
+    </div>
+    <div class="col-sm-5 col-md-5">
+      <form class="form-horizontal" style="margin-top: 20px">
+        <div class="form-group">
+          <label class="col-sm-4 col-md-3 control-label" for="order-description">Организация</label>
+          <div class="col-sm-8 col-md-9">
+            <input class="form-control" id="order-description" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 col-md-3 control-label" for="order-description">Телефон</label>
+          <div class="col-sm-9 col-md-9">
+            <input class="form-control" id="order-description" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 col-md-3 control-label" for="order-description">Email</label>
+          <div class="col-sm-9 col-md-9">
+            <input class="form-control" id="order-description" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 col-md-3 control-label" for="order-description">Имя</label>
+          <div class="col-sm-9 col-md-9">
+            <input class="form-control" id="order-description" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-9 col-md-7 col-md-offset-3 col-sm-offset-3">
+            <input class="btn btn-primary form-control" type="submit" value="Отправить информацию">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+    <script>
+      var showLocationPopover = function() {
+        var popoverTemplate = $("#location-popover-template-wrapper").html();
+        $("#location-popover").popover({
+          html: true,
+          placement: "bottom",
+          trigger: "manual",
+          container: "body",
+          template: popoverTemplate,
+          content: function() {
+            return $("#location-prompt-wrapper").html();
+          }
+        }).popover("show");
+      };
+      $(document).ready(function() {
+        if (localStorage.getItem("isLocationPrompted") != "true") {
+          showLocationPopover();
+          localStorage.setItem("isLocationPrompted", "true");
+        }
+        $(".location-dropdown-trigger").click(function(e) {
+          e.stopPropagation(); // https://stackoverflow.com/a/35760042/3694363
+          $("#location-popover").dropdown("toggle");
+          $("#location-popover").popover("hide");
+        });
+      });
+      $(document).on("click", function (e) {
+        $("#location-popover").popover("hide");
+      });
+    </script>
+  </body>
+</html>
