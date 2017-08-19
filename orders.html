@@ -3,27 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>
-Заявки
+  Заявки
  - kypimsami.ru</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/base.css" rel="stylesheet">
+    <link href="assets/css/includables/supplier-form.css" rel="stylesheet">
     
-<link href="assets/css/orders.css" rel="stylesheet">
+  <link href="assets/css/orders.css" rel="stylesheet">
 
   </head>
   <body>
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container-fluid">
-        <ul class="nav navbar-nav">
-          <p class="navbar-text">
-          Регион:
-          </p>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" id="location-popover" href="#">
-              Новосибирск и область
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li class="navbar-text">
+              Регион:
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" id="location-popover" href="#">
+                Новосибирск и область
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
   <li class="dropdown-submenu">
   </li>
   <li><a href="#">Москва и область</a></li>
@@ -31,72 +40,67 @@
   <li><a href="#">Новосибирск и область</a></li>
   <li><a href="#">...</a></li>
 </ul>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Леонид Федорович</a></li>
-          <li><a href="#">выход</a></li>
-        </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Леонид Федорович</a></li>
+            <li><a href="#">выход</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div id="location-popover-template-wrapper", style="display: none">
       <div class="popover fade bottom in location-popover-template" role="tooltip">
         <div class="arrow"></div>
-        <h3 class="popover-title" style="display: none;"></h3>
-        <div class="popover-content">
-          <div class="row" id="location-prompt">
-            <p class="text-center">Ваш регион - Новосибирск и область.<br>Угадали?</p>
-            <button class="btn btn-default col-md-offset-2 col-md-3">Да</button>
-            <button class="btn btn-default col-md-offset-2 col-md-3">Нет</button>
-          </div>
-        </div>
+        <div class="popover-content"></div>
       </div>
     </div>
     <div id="location-prompt-wrapper" style="display: none">
       <div class="row" id="location-prompt">
         <p class="text-center">Ваш регион - Новосибирск и область.<br>Угадали?</p>
-        <button class="btn btn-default col-md-offset-3 col-md-2">Да</button>
-        <button class="btn btn-default col-md-offset-2 col-md-2 location-dropdown-trigger">Нет</button>
+        <button class="btn btn-default col-xs-offset-3 col-xs-2">Да</button>
+        <button class="btn btn-default col-xs-offset-2 col-xs-2 location-dropdown-trigger">Нет</button>
       </div>
     </div>
     
-<header>
-  <div class="container-fluid">
-    <div class="row">
-      <img src="assets/img/logo.png">
-    </img>
-  </div>
-</header>
-<section class="orders">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
-        <h1 class="orders-title">Заявки</h1>
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <img src="assets/img/logo.png">
+      </img>
+    </div>
+  </header>
+  <section class="orders">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          <h1 class="orders-title">Заявки</h1>
+        </div>
+      </div>
+      <div class="row">
+  <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+    <div class="pull-left">
+      <span>раздел:</span>
+      <div class="dropdown" style="display: inline-block">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          Все
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Не все</a></li>
+          <li><a href="#">Совсем чуть-чуть</a></li>
+          <li><a href="#">Еще немного</a></li>
+        </ul>
       </div>
     </div>
-    <div class="row">
-  <div class="col-sm-3 col-md-3 col-sm-offset-2 col-md-offset-2">
-    <span>раздел:</span>
-    <div class="dropdown" style="display: inline-block">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-        Все
-        <span class="caret"></span>
-      </a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Не все</a></li>
-        <li><a href="#">Совсем чуть-чуть</a></li>
-        <li><a href="#">Еще немного</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="col-sm-5 col-md-5 text-right">
-    <span>регион:</span>
-    <div class="dropdown" style="display: inline-block">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-        Новосибирск и область
-        <span class="caret"></span>
-      </a>
-      <ul class="dropdown-menu">
+    <div class="pull-right">
+        <span>регион:</span>
+        <div class="dropdown" style="display: inline-block">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Новосибирск и область
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
   <li class="dropdown-submenu">
   </li>
   <li><a href="#">Москва и область</a></li>
@@ -104,17 +108,14 @@
   <li><a href="#">Новосибирск и область</a></li>
   <li><a href="#">...</a></li>
 </ul>
+        </div>
     </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2 text-center">
     <hr>
   </div>
 </div>
-    
-      <div class="row">
-  <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+      
+        <div class="row">
+  <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
     <p class="text-muted" style="padding-bottom: 10px">вчера, в 21:30</p>
     <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
     <p>Алексей</p>
@@ -123,9 +124,9 @@
     <hr>
   </div>
 </div>
-    
-      <div class="row">
-  <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+      
+        <div class="row">
+  <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
     <p class="text-muted" style="padding-bottom: 10px">вчера, в 21:30</p>
     <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
     <p>Алексей</p>
@@ -134,9 +135,9 @@
     <hr>
   </div>
 </div>
-    
-      <div class="row">
-  <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+      
+        <div class="row">
+  <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
     <p class="text-muted" style="padding-bottom: 10px">вчера, в 21:30</p>
     <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
     <p>Алексей</p>
@@ -145,9 +146,9 @@
     <hr>
   </div>
 </div>
-    
-      <div class="row">
-  <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+      
+        <div class="row">
+  <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
     <p class="text-muted" style="padding-bottom: 10px">вчера, в 21:30</p>
     <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
     <p>Алексей</p>
@@ -156,9 +157,9 @@
     <hr>
   </div>
 </div>
-    
-      <div class="row">
-  <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+      
+        <div class="row">
+  <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
     <p class="text-muted" style="padding-bottom: 10px">вчера, в 21:30</p>
     <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
     <p>Алексей</p>
@@ -167,9 +168,9 @@
     <hr>
   </div>
 </div>
-    
-      <div class="row">
-  <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+      
+        <div class="row">
+  <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
     <p class="text-muted" style="padding-bottom: 10px">вчера, в 21:30</p>
     <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
     <p>Алексей</p>
@@ -178,9 +179,9 @@
     <hr>
   </div>
 </div>
-    
-      <div class="row">
-  <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+      
+        <div class="row">
+  <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
     <p class="text-muted" style="padding-bottom: 10px">вчера, в 21:30</p>
     <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
     <p>Алексей</p>
@@ -189,9 +190,9 @@
     <hr>
   </div>
 </div>
-    
-      <div class="row">
-  <div class="col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+      
+        <div class="row">
+  <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
     <p class="text-muted" style="padding-bottom: 10px">вчера, в 21:30</p>
     <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</p>
     <p>Алексей</p>
@@ -200,46 +201,46 @@
     <hr>
   </div>
 </div>
-    
-    <div class="row text-center">
-      <button class="btn btn-primary btn-lg more-orders-button">Показать еще</button>
+      
+      <div class="row text-center">
+        <button class="btn btn-primary btn-lg more-orders-button">Показать еще</button>
+      </div>
+      <div class="row text-center">
+        <ul class="pagination">
+          <li><a href="#"><span class="glyphicon glyphicon-chevron-left left-pagination-button"></span></a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">...10</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-chevron-right right-pagination-button"></span></a></li>
+        </ul>
+      </div>
     </div>
-    <div class="row text-center">
-      <ul class="pagination">
-        <li><a href="#"><span class="glyphicon glyphicon-chevron-left" style="height: 20px"></span></a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">...10</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-chevron-right" style="height: 20px"></span></a></li>
-      </ul>
-    </div>
-  </div>
-</section>
+  </section>
 
     
-    <footer class="suppliers">
-      <div class="container-fluid">
+      <footer class="suppliers">
+        <div class="container-fluid">
   <div class="row text-center">
     <h1>Вы поставщик?</h1>
   </div>
-  <div class="row" style="margin-top: 20px">
+  <div class="row supplier-form-row">
     <div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
       <p>
-      Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888-77-66
+        Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888-77-66
       </p>
       <p>
-      Текст с дополнительной информацией по условиям сотрудничества.
-      <br>
-      Возможно стоит вынести на отдельную страницу.
-      <br>
-      Текст с дополнительной информацией по условиям сотрудничества.
-      <br>
-      Возможно стоит вынести на отдельную страницу.
+        Текст с дополнительной информацией по условиям сотрудничества.
+        <br>
+        Возможно стоит вынести на отдельную страницу.
+        <br>
+        Текст с дополнительной информацией по условиям сотрудничества.
+        <br>
+        Возможно стоит вынести на отдельную страницу.
       </p>
     </div>
     <div class="col-sm-5 col-md-5">
-      <form class="form-horizontal" style="margin-top: 20px">
+      <form class="form-horizontal supplier-form">
         <div class="form-group">
           <label class="col-sm-4 col-md-3 control-label" for="order-description">Организация</label>
           <div class="col-sm-8 col-md-9">
@@ -273,7 +274,7 @@
     </div>
   </div>
 </div>
-    </footer>
+      </footer>
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -302,6 +303,9 @@
           e.stopPropagation(); // https://stackoverflow.com/a/35760042/3694363
           $("#location-popover").dropdown("toggle");
           $("#location-popover").popover("hide");
+          if ($(window).width() < 768) {
+            $("#navbar").collapse();
+          }
         });
       });
       $(document).on("click", function (e) {
